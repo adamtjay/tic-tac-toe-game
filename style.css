@@ -1,0 +1,122 @@
+body {
+  max-width: 80%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  margin-top: 1%;
+  height: 100%;
+}
+
+.gameboard {
+  max-width: 70%;
+  margin-top: 2%;
+  margin: 0 auto;
+  text-align: center;
+  height: 80%;
+}
+
+table {
+  width: 55%;
+    border-top-color: transparent;
+    text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  width: 30.333%;
+  text-align: center;
+  height: 50%;
+  font-size: 30px;
+/*  content: '';
+  position:relative;*/
+}
+
+td:empty:hover {
+  background-color: yellow;
+}
+
+
+ td h1 {
+  /*  display: block;*/
+  /*position: absolute;*/
+  top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    /*padding-top: 10%;*/
+
+}
+
+/* adds 20% padding to empty TDs, then only 10% once text is added  */
+td:empty:after {
+  content: '';
+  display: block;
+  padding: 12%;
+}
+td:after {
+  /*content: '';*/
+  display: block;
+  padding: 5%;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th,
+.table>tfoot>tr>td, .table>tfoot>tr>th,
+.table>thead>tr>td, .table>thead>tr>th
+{
+  border-top: 0 !important;     /*needed to overwrite bootstrap gray border*/
+}
+
+div.spot {
+display:block;
+position: absolute;
+}
+
+h1 {
+  text-align: center;
+  font-size:50px;
+  /*display: block;*/
+  margin: 0 auto;
+  /*float: right;*/
+  /*margin-right: 40%;
+  margin-left: 40%;*/
+  /*padding: 0 1% 2% 3.75%;*/
+}
+
+h4 {
+  text-align: center;
+}
+
+h1.main-hdr {
+  font-size: 50px;
+  text-align: center;
+}
+
+.separator {
+  border: 1px solid black;
+  width: 35%;
+}
+
+.messages {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  top: 20px;
+  font-size: 40px;
+}
+
+
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+}
